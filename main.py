@@ -25,5 +25,5 @@ def main() -> QuerySet:
     Genre.objects.filter(name="Action").delete()
     Actor.objects.filter(first_name="Scarlett").delete()
 
-    # 4. Return filtered and ordered QuerySet
+    # 4. Return filtered and ordered
     return Actor.objects.filter(last_name="Smith").order_by("first_name")
